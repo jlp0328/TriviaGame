@@ -11,17 +11,45 @@
   display: none;
 }
 
-h1, p{
+p{
   text-align: center;
+  font-family: 'Chewy', cursive;
+  font-size: 30px;
 }
 
 h1{
+  text-align: center;
+  font-family: 'Chewy', cursive;
   padding-bottom: 50px;
+}
+
+#start{
+  font-size: 30px;
 }
 
 input {
   padding-right: 10px;
+  font-family: 'Chewy', cursive;
 }
+
 span{
   padding-left: 10px;
+  font-family: 'Chewy', cursive;
+  font-size: 30px;
+}
+
+h2{
+  font-family: 'Chewy', cursive;
+  font-size: 70px;
+  color: red;
+}
+
+#timeRemaining {
+  font-size: 70px;
+  color: red;
+}
+
+h3{
+  font-family: 'Chewy', cursive;
+  font-size: 50px;
 }
