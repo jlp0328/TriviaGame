@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+<title>Totally Cool 80's Baby Trivia</title>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+
+ <!-- Bootstrap -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+<div class="jumbotron">
+  <h1 class="display-3">Totally Cool 80's Baby Trivia</h1>
+<!--   <p class="lead">This is a simple hero unit, a simple jumbotron-style component for
+                  calling extra attention to featured content or information.</p>
+  <hr class="my-2">
+  <p>It uses utility classes for typography and
+     spacing to space content out within the larger container.</p> -->
+  <p class="lead">
+    <button class="btn btn-primary btn-lg" id="start">Start Game</button>
+  </p>
+
+  <p id="bye">Click above to start the game!</p>
+
+</div>
+
+<!-- <div id="empty">
+</div>
+ -->
+<div class="container" id="bank">
+<h2>Time Remaining: <span id="timeRemaining"></span></h2>
+
+  <h3 id="q1"></h3>
+  <form id="options1">
+    <input type="radio" name="q1" class="custom-control-input one" value="Apple Fritters" id="one"><span id="q1Choice1"></span></br>
+
+    <input type="radio" name="q1" class="custom-control-input one" value="The Peach Pit" id="one"><span id="q1Choice2"></span></br>
+
+     <input type="radio" name="q1" class="custom-control-input one" value="Central Perk" id="one"><span id="q1Choice3"></span></br>
+
+     <input type="radio" name="q1" class="custom-control-input one" value="The Max" id="one"><span id="q1Choice4"></span></br>
+  </form>
+
+  <h3 id="q2"></h3>
+  <form>
+      <input type="radio" name="q2" class="custom-control-input two" value="Tori Spelling" id="two"><span id="q2Choice1"></span></br>
+
+    <input type="radio" name="q2" class="custom-control-input two" value="Jennifer Aniston" id="two"><span id="q2Choice2"></span></br>
+
+     <input type="radio" name="q2" class="custom-control-input two" value="Jennie Garth" id="two"><span id="q2Choice3"></span></br>
+
+     <input type="radio" name="q2" class="custom-control-input two" value="Tiffani Amber Thiessen" id="two"><span id="q2Choice4"></span></br>
+
+  </form>
+
+  <h3 id="q3"></h3>
+  <form>
+    <input type="radio" name="q3" class="custom-control-input three" value="Bayside" id="three"><span id="q3Choice1"></span></br>
+
+    <input type="radio" name="q3" class="custom-control-input three" value="Capeside" id="three"><span id="q3Choice2"></span></br>
+
+     <input type="radio" name="q3" class="custom-control-input three" value="Sweet Valley High" id="three"><span id="q3Choice3"></span></br>
+
+     <input type="radio" name="q3" class="custom-control-input three" value="Scranton High" id="three"><span id="q3Choice4"></span></br>
+  </form>
+
+  <h3 id="q4"></h3>
+  <form>
+   <input type="radio" name="q4" class="custom-control-input four" value="San Francisco" id="four"><span id="q4Choice1"></span></br>
+
+    <input type="radio" name="q4" class="custom-control-input four" value="Detroit" id="four"><span id="q4Choice2"></span></br>
+
+     <input type="radio" name="q4" class="custom-control-input four" value="Raleigh" id="four"><span id="q4Choice3"></span></br>
+
+     <input type="radio" name="q4" class="custom-control-input four" value="NYC" id="four"><span id="q4Choice4"></span></br>
+  </form>
+
+ <h3 id="q5"></h3>
+ <form>
+   <input type="radio" name="q5" class="custom-control-input five" value="Jim Carrey" id="five"><span id="q5Choice1"></span></br>
+
+    <input type="radio" name="q5" class="custom-control-input five" value="Damon Wayons" id="five"><span id="q5Choice2"></span></br>
+
+     <input type="radio" name="q5" class="custom-control-input five" value="Jamie Foxx" id="five"><span id="q5Choice3"></span></br>
+
+     <input type="radio" name="q5" class="custom-control-input five" value="Adam Sandler" id="five"><span id="q5Choice4"></span></br>
+</form>
+</div>
+
+<div class ="container" id="results">
+<h2>Time is up!</h2>
+<h3>Correct Answers: <span id="questionsRight"></span></h3>
+<h3>Incorrect Answers: <span id="questionsWrong"></span></h3>
+<h3>Unanswered Questions: <span id="didNotAnswer"></span></h3>
+</div>
+
+
+
+<script src="assets/javascript/app.js"></script>
+
+</body>
+</html>

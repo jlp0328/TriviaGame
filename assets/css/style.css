@@ -1,0 +1,27 @@
+
+.jumbotron, body, .row{
+  padding: 15px;
+}
+
+.btn{
+  background-color: #660066;
+}
+
+#bank, #results {
+  display: none;
+}
+
+h1, p{
+  text-align: center;
+}
+
+h1{
+  padding-bottom: 50px;
+}
+
+input {
+  padding-right: 10px;
+}
+span{
+  padding-left: 10px;
+}
