@@ -41,7 +41,7 @@ var quiz = $("#bank");
 var timer;
 console.log(timer);
 
-var countdown = 10;
+var countdown = 30;
 
 var answerBankQ1 = [];
 var answerBankQ2 = [];
@@ -59,6 +59,8 @@ var correct = 0;
 
 var incorrect = 0;
 
+var audioElement = document.createElement("audio");
+  audioElement.setAttribute("src", "assets/images/90210theme.mp3");
 
 
 //Functions
@@ -67,11 +69,10 @@ $("button").on("click", function() {
   $("#bye").hide("fast");
   $(this).hide("fast");
   $("#bank").toggle();
+  audioElement.play();
   startCountdown();
   generateQuestions();
 });
-
-
 
 function startCountdown(){
 

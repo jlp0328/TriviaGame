@@ -53,3 +53,18 @@ h3{
   font-family: 'Chewy', cursive;
   font-size: 50px;
 }
+
+#questionsRight, #questionsWrong, #didNotAnswer{
+    font-size: 70px;
+    color: red;
+}
+
+body {
+  background-image: url("../images/90sbackground.jpg");
+  height: 100%;
+  width: 100%;
+}
+
+#bank{
+  background-color: white;
+}
