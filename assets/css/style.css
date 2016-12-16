@@ -65,6 +65,6 @@ body {
   width: 100%;
 }
 
-#bank{
+#bank, #results{
   background-color: white;
 }
