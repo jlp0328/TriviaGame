@@ -66,6 +66,7 @@ var audioElement = document.createElement("audio");
 //Functions
 
 $("#start").on("click", function() {
+
   $("#bye").hide("fast");
   $(this).hide("fast");
   $("#bank").toggle();
@@ -74,7 +75,9 @@ $("#start").on("click", function() {
   generateQuestions();
 });
 
-$("#submit").on("click", function(){
+$("#submit").on("click", function(e){
+
+    e.preventDefault();
 
     $("#bank").hide("fast");
     $("#results").toggle();
