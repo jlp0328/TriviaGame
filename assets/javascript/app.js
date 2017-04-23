@@ -65,13 +65,23 @@ var audioElement = document.createElement("audio");
 
 //Functions
 
-$("button").on("click", function() {
+$("#start").on("click", function() {
   $("#bye").hide("fast");
   $(this).hide("fast");
   $("#bank").toggle();
   audioElement.play();
   startCountdown();
   generateQuestions();
+});
+
+$("#submit").on("click", function(){
+
+    $("#bank").hide("fast");
+    $("#results").toggle();
+    determineCorrect();
+    determineUnanswered();
+    audioElement.pause();
+
 });
 
 function startCountdown(){
@@ -188,6 +198,7 @@ function generateQ5(){
   });
 
   function determineCorrect(){
+
      answerBankFinal = answerBankQ1.concat(answerBankQ2, answerBankQ3, answerBankQ4, answerBankQ5);
 console.log(answerBankFinal);
 
@@ -212,6 +223,7 @@ console.log(answerBankFinal);
     var unanswered = correctBank.length - answerBankFinal.length;
     console.log(unanswered);
     $("#didNotAnswer").html(unanswered);
+
   }
 
   });
