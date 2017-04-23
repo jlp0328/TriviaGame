@@ -74,7 +74,7 @@ $("#start").on("click", function() {
   generateQuestions();
 });
 
-$("#submit").on("click", function(){
+$("#answers").on("click", function(){
 
     $("#bank").hide("fast");
     $("#results").toggle();
