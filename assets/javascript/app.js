@@ -219,7 +219,6 @@ console.log(answerBankFinal);
 
   function determineUnanswered(){
 
-
     var unanswered = correctBank.length - answerBankFinal.length;
     console.log(unanswered);
     $("#didNotAnswer").html(unanswered);
